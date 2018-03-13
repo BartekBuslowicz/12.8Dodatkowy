@@ -3,9 +3,256 @@
 	padding: 0;
 	margin: 0;
 	// border: 1px solid red;
-	font-family: 'Varela Round', sans-serif;
 }
 .container {
-	max-width: 1024px;
+	max-width: 1110px;
 	width: 100%;
+	text-align: center;
+}
+.titleSection {
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+}
+.underTitleSection {
+	color: grey;
+	font-size: 14px;
+	font-weight: 700;
+	text-align: center;
+}
+body {
+	max-width: 1600px;
+	width: 100%;
+	.menu {
+		.navbar {
+			padding-bottom: 0;
+			ul {
+				li {
+					padding-bottom: 10px;
+					a {
+
+					}
+				}
+				li:hover {
+					padding-bottom: 5px;
+					border-bottom: 5px solid #B88B58;
+					transition: 0.5s;
+				}
+			}
+		}
+	}
+	.home {
+		margin-top: 0;
+		li {
+			width: 10px;
+			height: 10px;
+			border-radius: 10px;
+			border: 2px solid #B88B58;
+		}
+		.carousel-indicators .active {
+			background-color: #B88B58;
+		}
+		.carousel-indicators li {
+			background-color: transparent;
+		}
+		img {
+			filter: brightness(50%);
+		}
+		h1 {
+			font-size: 70px;
+			font-weight: 700;
+			text-align: center;
+			position: relative;
+			top: -500px;
+			margin-bottom: 0;
+			padding-bottom: 0; 
+		}
+		.firstHomeString {
+			color: white;
+		}
+		.secondHomeString {
+			color: #B88B58;
+		}
+		.thirdHomeString {
+			font-size: 20px;
+			color: white;
+		}
+		.getInTouch {
+			border-radius: 20px;
+			background-color: #B88B58;
+			border: none;
+			position: relative;
+			width: 150px;
+			top: -470px;
+			font-size: 12px;
+			color: white;
+		}
+		.getInTouch:hover {
+			background-color: black;
+			border: none;
+		}
+		// .getInTouch::after {
+		// 	content: url(http://i63.tinypic.com/28texx5.png);
+		// 	position: relative;
+		// 	bottom: 0px;
+		// }
+	}
+	.aboutus{
+		.col-7 {
+			text-align: left;
+			button {
+				border-radius: 20px;
+				background-color: #B88B58;
+				border: none;
+				width: 150px;
+				font-size: 12px;
+				color: white;
+			}
+			button:hover {
+			background-color: black;
+			border: none;
+			}
+		}
+	}
+	.services {
+		background-color: black;
+		.titleSection {
+			color: white;
+		}
+		.row {
+			div {
+				display: block;
+				img {
+					margin-bottom: 40px;
+				}
+				P {
+					font-size: 20px;
+					color: white;
+					font-weight: 700;
+					padding: 0 40px 0 40px;
+				}
+				p:last-of-type {
+					font-size: 10px;
+					color: grey;
+					font-weight: 400;
+				}
+			}
+		}
+	}
+	.ourprojects {
+		.ourprojectMenu {
+			border: 1px solid #cfcfcf;
+			background-color: #ededed;
+			width: 700px;
+			height: 55px;
+			margin: 0 auto;
+			border-radius: 20px;
+			padding-top: 15px;
+
+			[class*="col"] {
+				border-right: 1px solid black;
+				font-size: 14px;
+			}
+			[class*="col"]:hover {
+					border-bottom: 5px solid #B88B58;
+					transition: 0.5s;
+			}
+			[class*="col"]:last-of-type {
+				border-right: none;
+			}
+		}
+		.gallery {
+			margin-top: 30px;
+			[class*="col"] {
+				a {
+					position: relative;
+					:not(img) {
+						position: absolute;
+						top: 20%;
+						opacity: 0;
+						transition: .3s;
+						z-index: 1;
+					}
+					h1 {
+						color: white;
+						text-align: center;
+						width: 100%;
+					}
+					p {
+						top: 50%;
+						text-align: center;
+						color: white;
+					}
+				}
+			}
+			[class*="col"]:hover img{
+				filter: brightness(50%) blur(2px);
+				transition: .3s;
+				}
+			[class*="col"]:hover :not(img) {
+				opacity: 1;
+			}
+			}
+			button {
+				
+				border-radius: 20px;
+				background-color: #B88B58;
+				border: none;
+				width: 150px;
+				font-size: 12px;
+				color: white;
+			}
+			button:hover {
+			background-color: black;
+			border: none;
+			}
+	}
+	.ourteam {
+		background-image: url("http://i66.tinypic.com/347w7ba.jpg");
+		.col-center {
+			margin: 0 auto;
+			float: none !important;
+		}
+		.carousel {	
+			margin: 30px auto 50px;
+		}
+		.carousel .item {
+		    text-align: center;
+			overflow: hidden;
+		    // height: 160px;
+		}
+		.carousel .item .img-box {
+			background: #fff;
+			padding: 9px;
+		}
+		.carousel .item img {
+		    margin: 0 auto;
+		}
+		.carousel .item .icon {
+			background-color: grey;
+			padding: 5px;
+			display: inline-block;
+			width: 35px;
+			border-radius: 50%;
+		}
+		.carousel .item .icon:hover {
+			background-color: #B88B58;
+		}
+		.carousel .carousel-indicators {
+			bottom: -40px;
+		}
+		.carousel-indicators li, .carousel-indicators li.active {
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			margin: 1px 4px;
+		}
+		.carousel-indicators li {	
+			background-color: transparent;
+			border: 2px solid #B88B58;
+		}
+		.carousel-indicators li.active {
+			background: #B88B58;
+		}
+	}
 }
